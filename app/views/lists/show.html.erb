@@ -1,0 +1,9 @@
+<h1><%= @list.name %></h1>
+
+<% @bookmarks.each do |mark|%>
+  <%= mark.comment %>
+  <%= mark.movie.title %>
+
+<% end %>
+<p>add a bookmark:</p>
+<%= render "bookmarks/new" %>

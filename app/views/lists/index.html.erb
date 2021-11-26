@@ -1,0 +1,16 @@
+
+<%= render "shared/navbar" %>
+<%= render  "shared/jumbotron" %>
+
+<h1>People made lists</h1>
+<div class="container">
+  <div class="row">
+    <%= render @lists %>
+  </div>
+</div>
+<hr>
+
+<h4>Have something better? Make a new list:</h4>
+<%= render "new" %>
+
+<%= render "shared/dropdown" %>
