@@ -1,8 +1,10 @@
 <h1><%= @list.name %></h1>
-
+<%= raise %>
+<%# <%= cl_image_tag(@list.photo.key,
+      width: 400, height: 300, crop: :fill) %>
 <% @bookmarks.each do |mark|%>
   <%= mark.comment %>
   <%= mark.movie.title %>
-
+  <%= link_to  "Delete this", list_path(list), method: "delete" %>
 <% end %>
 <%= render "bookmarks/new" %>
